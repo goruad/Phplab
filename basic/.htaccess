@@ -1,0 +1,18 @@
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond % basic/[NC]
+RewriteRule .*basic/web/? [R=301,L]
+<IfModule mod_rewrite.c>
+   RedirectMatch 301 http://kappa.cs.petrsu.ru/~averkov/basic/(.*) http://kappa.cs.petrsu.ru/~averkov/basic/web//$1
+</IfModule>
+
+
+
+
+
+
+
+
+
